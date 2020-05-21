@@ -1,0 +1,16 @@
+
+p=int(input("Enter p value :")); 
+g=int(input("Enter g value :")); 
+x=int(input("enter secret key of A :")); 
+y=int(input("enter secret key of B :")); 
+sendA = (g**x)%p 
+sendB = (g**y)%p
+
+ComputeA = (sendB**x)%p
+ComputeB = (sendA**y) %p
+sendB = (g**y)%p
+ComputeB = (sendA**y) %p
+print ("A sends:    ", sendA )
+print ("B computes:   ", ComputeB )
+print ("B sends :     ", sendB)
+print ("A computes: ", ComputeA)
