@@ -1,0 +1,4 @@
+t = [2, 4, 5, 6, 7] 
+print ("The original list is : " +  str(t)) 
+res = [ t[0], t[-1] ]  
+print ("The first and last element of list are : " +  str(res))
