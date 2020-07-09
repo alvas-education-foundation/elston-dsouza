@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int countDivisibles(int A, int B, int M)
+{
+    int counter = 0,i;
+    for ( i = A; i <= B; i++)
+        if (i % M == 0)
+           cout<<i<<" ";
+           return i;
+}
+int main()
+{
+    int A,B,M;
+    cout<<"Enter the start range :";
+    cin>>A;
+    cout<<"Enter the end range :";
+    cin>>B;
+    cout<<"Enter the number whose divisiblity is to be found :";
+    cin>>M;
+    cout<<"The numbers divisible by "<<M<<" are :";
+    cout << countDivisibles(A, B, M) << endl;
+    return 0;
